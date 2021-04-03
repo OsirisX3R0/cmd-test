@@ -42,7 +42,7 @@ fn main() {
         }
     }
 
-    if let Some(matches) = matches.subcommand_matches("net") {
+    if let Some(_matches) = matches.subcommand_matches("net") {
         let output = Command::new("cmd")
             .args(&["/C", "netstat"])
             .output()
